@@ -1,8 +1,13 @@
+@import 'components/colors';
+$accent_color: tomato;
 @import 'components/cleanup';
 @import 'components/images';
+@import 'components/elements';
+// OTHER ELEMENTS
+// OTHER STYLES BELOW
 
 #main{
-    padding: 2em;
+    padding: 2rem;
 }
 
 .my-image{

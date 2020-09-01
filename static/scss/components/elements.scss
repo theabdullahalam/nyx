@@ -1,0 +1,31 @@
+$transition_duration: 0.3s;
+
+$button_horizontal_padding: 2rem;
+$button_vertical_padding: 0.5rem;
+$button_transition_duration: $transition_duration;
+
+.buttonlink{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: $accent_color;
+    border-radius: 4px;
+
+    padding-left: $button_horizontal_padding;
+    padding-right: $button_horizontal_padding;
+    padding-top: $button_vertical_padding;
+    padding-bottom: $button_vertical_padding;
+
+    -webkit-transition: background $button_transition_duration, color $button_transition_duration;
+    -moz-transition: background $button_transition_duration, color $button_transition_duration;
+    -o-transition: background $button_transition_duration, color $button_transition_duration;
+    transition: background $button_transition_duration, color $button_transition_duration;
+}
+
+.buttonlink:hover{
+    background: $accent_color;
+    color: snow;
+}
