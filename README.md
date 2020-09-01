@@ -1,4 +1,4 @@
-# Reusable CSS components
+# Nyx - Reusable CSS components
 A simple reusable library of components. To use, copy the the `nyx` folder into your own scss folder, and import what you need from there. Yeah it's dirty, because this repo is intended for personal use. Installable package will be made soon.
 
 Also, the library is minimal, but quite opinionated.
