@@ -65,7 +65,7 @@ small {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #ffffff;
+  background: #f9f9f9;
   border-radius: 3px;
   z-index: 1;
 }
@@ -77,75 +77,81 @@ small {
   font-size: 2rem;
 }
 
-#navmenu {
-  height: 100%;
-  width: 50%;
-  padding: 2rem;
-  background: #1f1f1f;
-  color: white;
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  right: -200%;
-  transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
+.hamburger {
+  display: none;
+}
+
+#navmenu .closebutton {
+  display: none;
 }
 #navmenu ul {
   list-style: none;
-  text-align: end;
 }
 #navmenu ul li {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  display: inline;
+  padding-left: 2rem;
 }
 #navmenu ul li a {
   text-decoration: none;
 }
 
-#navmenu:target {
-  right: 0;
-}
-
-@media screen and (min-width: 60rem) {
+@media screen and (max-width: 60rem) {
   .hamburger {
-    display: none;
+    display: initial;
   }
 
   #navmenu {
-    height: unset;
-    padding: unset;
-    background: unset;
-    position: unset;
-    margin-left: auto;
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+    background: #1f1f1f;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
   }
   #navmenu .closebutton {
-    display: none;
+    display: initial;
   }
   #navmenu ul {
     list-style: none;
+    text-align: end;
   }
   #navmenu ul li {
-    display: inline;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: block;
   }
   #navmenu ul li a {
     text-decoration: none;
-    padding-left: 1rem;
+  }
+
+  #navmenu:target {
+    right: 0;
   }
 }
 .section-title {
-  padding-top: 3rem;
+  padding-top: 2rem;
+}
+
+p {
+  max-width: 40rem;
 }
 
 #main {
   padding: 2rem;
+  padding-top: unset;
 }
-
-#nakli-header {
-  background: teal;
-  color: snow;
-  padding: 1rem;
+@media screen and (min-width: 90rem) {
+  #main {
+    margin-left: 20rem;
+    max-width: 40rem;
+  }
 }
 
 .my-image {
@@ -158,16 +164,22 @@ small {
   color: white;
   display: flex;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media screen and (min-width: 90rem) {
+  #header #title {
+    margin-left: 20rem;
+  }
+  #header #navmenu {
+    margin-right: 20rem;
+  }
 }
 #header .hamburger {
   margin-left: auto;
 }
-@media screen and (min-width: 60rem) {
-  #header {
-    margin-left: auto;
-  }
+#header #navmenu {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=demo.css.map */
