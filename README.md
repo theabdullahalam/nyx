@@ -12,6 +12,7 @@ Note: This library is a work in progress. More components will be added over tim
 A super simple cleanup file that 
 * Removes borders and padding around body tags
 * Sets the default font-family to `Arial, Helvetica, sans-serif;`
+* Makes the headers really huge for displays
 * A bunch of other useful stuff picked up from the famous normalise.css
 
 ### images.scss

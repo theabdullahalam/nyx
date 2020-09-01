@@ -2,14 +2,46 @@
 @import 'nyx/cleanup';
 @import 'nyx/images';
 @import 'nyx/elements';
+@import 'nyx/navmenu';
 // OTHER ELEMENTS
 // OTHER STYLES BELOW
+
+.section-title{
+    padding-top: 3rem;
+}
 
 #main{
     padding: 2rem;
 }
 
+#nakli-header{
+    background: $primary_color;
+    color: snow;
+    padding: 1rem;
+}
+
 .my-image{
     width: 15em;
     height: 15em;
+}
+
+
+
+
+#header{
+    background: teal;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .hamburger{
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 60rem){
+        margin-left: auto;
+    }
+    
 }

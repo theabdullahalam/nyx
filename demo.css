@@ -2,6 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: #202020;
+}
+
+a {
+  color: inherit;
 }
 
 hr {
@@ -54,13 +59,115 @@ small {
   color: snow;
 }
 
+.hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.closebutton {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#navmenu {
+  height: 100%;
+  width: 50%;
+  padding: 2rem;
+  background: #1f1f1f;
+  color: white;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: -200%;
+  transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+#navmenu ul {
+  list-style: none;
+  text-align: end;
+}
+#navmenu ul li {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+#navmenu ul li a {
+  text-decoration: none;
+}
+
+#navmenu:target {
+  right: 0;
+}
+
+@media screen and (min-width: 60rem) {
+  .hamburger {
+    display: none;
+  }
+
+  #navmenu {
+    height: unset;
+    padding: unset;
+    background: unset;
+    position: unset;
+    margin-left: auto;
+  }
+  #navmenu .closebutton {
+    display: none;
+  }
+  #navmenu ul {
+    list-style: none;
+  }
+  #navmenu ul li {
+    display: inline;
+  }
+  #navmenu ul li a {
+    text-decoration: none;
+    padding-left: 1rem;
+  }
+}
+.section-title {
+  padding-top: 3rem;
+}
+
 #main {
   padding: 2rem;
+}
+
+#nakli-header {
+  background: teal;
+  color: snow;
+  padding: 1rem;
 }
 
 .my-image {
   width: 15em;
   height: 15em;
+}
+
+#header {
+  background: teal;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#header .hamburger {
+  margin-left: auto;
+}
+@media screen and (min-width: 60rem) {
+  #header {
+    margin-left: auto;
+  }
 }
 
 /*# sourceMappingURL=demo.css.map */
