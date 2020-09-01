@@ -1,5 +1,5 @@
 # Nyx - Reusable CSS components
-A simple reusable library of components. To use, copy the the `nyx` folder into your own scss folder, and import what you need from there. Yeah it's dirty, because this repo is intended for personal use. Installable package will be made soon.
+A simple reusable **scss** library of components. To use, copy the the `nyx` folder into your own scss folder, and import what you need from there. Yeah it's dirty, because this repo is intended for personal use. Installable package will be made soon.
 
 Also, the library is minimal, but quite opinionated.
 
@@ -14,7 +14,7 @@ A super simple cleanup file that
 * Sets the default font-family to `Arial, Helvetica, sans-serif;`
 * A bunch of other useful stuff picked up from the famous normalise.css
 
-### navmenu.css
+### navmenu.scss
 Provides a responsive navbar menu that displays items in a horizontal row on desktop, and a hamburger menu on mobile. The hamburger menu is also functional; you don't need any javascript to make it work! Tapping the hamburger slides out a full width menu from the right side of the screen. 
 
 To implement the menu, first create the hamburger menu as follows:
@@ -34,13 +34,13 @@ Then, create a menu using the following syntax:
 
     <ul>
         <li>
-            <a href="https://sentient-pixels.com">Sentient-Pixels</a>
+            <a href="link1">Item 1</a>
         </li>
         <li>
-            <a href="https://github.com/theabdullahalam/nyx">Github</a>
+            <a href="link2">Item 2</a>
         </li>
         <li>
-            <a href="https://unsplash.com/abdullahalam">Unsplash</a>
+            <a href="link3">Item 3</a>
         </li>                        
     </ul>
 </nav>
@@ -68,20 +68,20 @@ And that's it! The menu should now work! In the demo, this menu is placed inside
 
             <ul>
                 <li>
-                    <a href="https://sentient-pixels.com">Sentient-Pixels</a>
+                    <a href="link1">Item 1</a>
                 </li>
                 <li>
-                    <a href="https://github.com/theabdullahalam/nyx">Github</a>
+                    <a href="link2">Item 2</a>
                 </li>
                 <li>
-                    <a href="https://unsplash.com/abdullahalam">Unsplash</a>
-                </li>                        
+                    <a href="link3">Item 3</a>
+                </li>                       
             </ul>
         </nav>
         
     </div>
 ```
-Relevant CSS:
+Relevant SCSS:
 ```scss
 #header{
     background: teal;
@@ -102,7 +102,7 @@ Relevant CSS:
 }
 ```
 
-*The left margin of both the hamburger and the menu is set to auto. This is so that whicher one is currently visible will stay on the right edge of header. This is a highly specific example for the demo; tweak it to your use case.*
+*The left margin of both the hamburger and the menu is set to auto. This is so that whichever one is currently visible will stay on the right edge of header. This is a highly specific example for the demo; tweak it to your use case.*
 
 
 ### images.scss
@@ -145,6 +145,7 @@ Variable | Purpose
 $primary_color|Large dominating areas
 $secondary_color|Subtitles, captions and other less important stuff
 $accent_color|For flair across the page, like links, buttons, etc
+$hamburger_color|Color for the hamburger icon (If using the three `span` default method)
 
 Here's how these value can be customised. Make sure ``colors.scss`` is the first thing imported in your scss file. Then, **before importing anything else,** set your own values for these colors. To change the accent color to `tomato`,
 

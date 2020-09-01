@@ -115,6 +115,9 @@ small {
     display: flex;
     flex-flow: column;
     align-items: flex-end;
+    -webkit-box-shadow: -4px 0px 11px 0px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: -4px 0px 11px 0px rgba(0, 0, 0, 0.37);
+    box-shadow: -4px 0px 11px 0px rgba(0, 0, 0, 0.37);
   }
   #navmenu .closebutton {
     display: initial;
@@ -126,6 +129,9 @@ small {
   #navmenu ul li {
     padding-bottom: 1rem;
     padding-top: 1rem;
+    padding-right: unset;
+    font-weight: bold;
+    font-size: 1.2rem;
     display: block;
   }
   #navmenu ul li a {
