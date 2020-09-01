@@ -36,7 +36,7 @@ small {
   color: inherit;
   display: inline-block;
   border-style: solid;
-  border-width: 2px;
+  border-width: 3px;
   border-color: tomato;
   border-radius: 4px;
   padding-left: 2rem;
@@ -63,4 +63,4 @@ small {
   height: 15em;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=demo.css.map */
