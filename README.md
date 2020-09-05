@@ -10,7 +10,7 @@ Note: This library is a work in progress. More components will be added over tim
 ## How To Use
 ### cleanup.scss
 A super simple cleanup file that 
-* Removes unnecessary border and padding
+* Removes unnecessary border and padding (including around headers; space them manually)
 * Sets the default font-family to `Arial, Helvetica, sans-serif;`
 * A bunch of other useful stuff picked up from the famous normalise.css
 
