@@ -31,6 +31,11 @@ small {
   font-size: 80%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .roundedimage {
   border-radius: 50%;
   object-fit: cover;
@@ -173,6 +178,10 @@ p {
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+#header h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 @media screen and (min-width: 90rem) {
   #header #title {
